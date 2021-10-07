@@ -48,17 +48,17 @@ def scan(url,counts):
         if code.status_code == 200:
             coloar.printDarkGreen("[+]命中链接:"+urls+'  Status_Code='+str(code.status_code)+'  '+str(title)+'\n')
             f = open(name+'.txt','a')
-            f.write(urls+'  '+str(code.status_code)+'  '+str(title)+'\n')
+            f.write(urls+'  '+str(code.status_code)+'  '+str(title)+'\n'+'\n')
 
         elif code.status_code == 302:
             coloar.printDarkYellow("[+]命中链接:"+urls+'  Status_Code='+str(code.status_code)+'  '+str(title)+'\n')
             f = open(name + '.txt', 'a')
-            f.write(urls+'  '+str(code.status_code)+'  '+str(title)+'\n')
+            f.write(urls+'  '+str(code.status_code)+'  '+str(title)+'\n'+'\n')
 
         elif code.status_code == 403:
             coloar.printDarkRed("[+]命中链接:"+urls+'  Status_Code='+str(code.status_code)+'  '+str(title)+'\n')
             f = open(name + '.txt', 'a')
-            f.write(urls+'  '+str(code.status_code)+'  '+str(title)+'\n')
+            f.write(urls+'  '+str(code.status_code)+'  '+str(title)+'\n'+'\n')
 
         else:
             coloar.printDarkGray("[-]匹配失败:"+urls+'  Status_Code='+str(code.status_code)+'  '+str(title)+'\n')
