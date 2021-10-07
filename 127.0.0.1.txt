@@ -1,0 +1,7 @@
+http://127.0.0.1/1.zip  200  []
+http://127.0.0.1/admin  200  ['研究生管理系统']
+http://127.0.0.1/phpmyadmin  200  ['phpMyAdmin ']
+http://127.0.0.1/1.rar  403  ['403 Forbidden']
+http://127.0.0.1/phpinfo.php  200  ['phpinfo()']
+http://127.0.0.1/upload  200  ['upload-labs']
+
